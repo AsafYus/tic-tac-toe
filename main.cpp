@@ -12,17 +12,20 @@ int main()
         std::cout << "\nEnter your choice: ";
         // Get user input
         std::cin >> choice;
+        std::string name1;
+        std::string name2;
+
 
         switch (choice)
         {
             case 1:
                 std::cout << "\nEnter the name of the first player: ";
-                std::string name1;
                 std::cin >> name1;
                 std::cout << "\nEnter the name of the second player: ";
-                std::string name2;
                 std::cin >> name2;
 
+                break;
+            case 2:
                 break;
         }
     }
