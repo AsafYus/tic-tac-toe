@@ -15,7 +15,6 @@ int main()
         std::string name1;
         std::string name2;
 
-
         switch (choice)
         {
             case 1:
