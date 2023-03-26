@@ -1,5 +1,6 @@
-#include <iostream>
-#include <string>
+#include <iostream>     // for std::cout and std::cin and std::endl
+#include <string>       // for std::string
+#include <memory>       // for std::unique_ptr
 
 int main()
 {
@@ -22,6 +23,9 @@ int main()
                 std::cin >> name1;
                 std::cout << "\nEnter the name of the second player: ";
                 std::cin >> name2;
+
+                std::unique_ptr<Player> p1 = std::make_unique<HumanPlayer>(name1);
+                std::unique_ptr<Player> p2 = std::make_unique<HumanPlayer>(name2);
 
                 break;
             case 2:
