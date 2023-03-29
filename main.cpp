@@ -2,6 +2,8 @@
 #include <string>       // for std::string
 #include <memory>       // for std::unique_ptr
 
+#include "TicTacToeHeaders.h"
+
 int main()
 {
     int choice = -1;
